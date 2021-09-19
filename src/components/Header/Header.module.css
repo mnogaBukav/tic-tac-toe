@@ -1,0 +1,14 @@
+.header {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  composes: fonts from "../constants.css";
+  composes: colors from "../constants.css";
+
+  font-family: var(--system);
+  font-size: 1.5em;
+  color: var(--forest);
+}

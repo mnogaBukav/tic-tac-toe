@@ -1,0 +1,49 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popup_wrapper {
+  composes: colors from "../constants.css";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--grey);
+  animation: appear 0.3s ease-in-out;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 50%;
+  max-width: 500px;
+  background-color: white;
+  padding: 30px;
+}
+
+.text {
+  composes: fonts from "../constants.css";
+
+  font-family: var(--system);
+  font-size: 1.5em;
+  color: var(--forest);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

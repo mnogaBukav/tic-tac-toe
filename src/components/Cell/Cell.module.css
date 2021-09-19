@@ -1,0 +1,38 @@
+.cell {
+  composes: colors from "../constants.css";
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  user-select: none;
+  cursor: pointer;
+  font-size: 5em;
+  font-weight: 100;
+  color: rgb(109, 109, 109);
+  background-color: var(--light-grey);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+  background-color: var(--light-laurel);
+}
+
+.cell_with_content {
+  composes: cell;
+
+  cursor: default;
+}
+
+.cell_with_content:hover {
+  background-color: var(--light-grey);
+}
+
+.win_cell {
+  background-color: var(--light-laurel);
+}
+
+.win_cell:hover {
+  background-color: var(--light-laurel);
+}

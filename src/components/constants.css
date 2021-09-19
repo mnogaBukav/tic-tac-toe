@@ -1,0 +1,15 @@
+.colors {
+  --apple: #bbdb9b;
+  --laurel: #abc4a1;
+  --light-laurel: #abc4a154;
+  --opal: #9db4ab;
+  --sapphire: #7c376b;
+  --forest: #516455;
+  --artichoke: #878e76;
+  --grey: #0000005e;
+  --light-grey: #dadada46;
+}
+
+.fonts {
+  --system: system-ui;
+}
